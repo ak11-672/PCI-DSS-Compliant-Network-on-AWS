@@ -1,10 +1,26 @@
 # PCI-DSS-Compliant-Network-on-AWS
 ![PCI_Compliance_Fig4_Architecture_Automate_BuildDeploy_new](https://github.com/user-attachments/assets/1eba37e4-0a95-4860-8c9e-46ff5646024d)
 
-As as junior engineer in Cloud/Devops team at a consulting company we were tasked to create a pci dss compliant network on AWS for a client who desired to segment his payment processing service offloading bunch of compliance responsibilities to the cloud provider.
 
-  -> Supported the implementation of Virtual Private Cloud (VPC) configurations, including private subnets and security groups, to control inbound and outbound traffic to the microservices.
-  
-  -> Helped in configuring AWS Identity and Access Management (IAM) roles and policies to enforce the principle of least privilege for all services and users.
-  
-  ->Configured Amazon Elastic Container Service (ECS) to manage and scale containerized applications.
+
+Designed and implemented a robust AWS infrastructure aimed at ensuring high availability, scalability, and PCI DSS compliance. The architecture integrates multiple VPCs for redundancy, a comprehensive CI/CD pipeline, and enhanced security measures, making it suitable for handling sensitive payment data.
+
+Key Features:
+
+1. Redundant VPCs: Deployed two VPCs in us-west-1 and us-east-1 for redundancy and high availability, with subnets for web, application, and database layers.
+
+2. Application Load Balancer: Configured ALBs to distribute traffic across application containers in ECS and Fargate.
+
+3. Elastic Container Services (ECS) and Fargate: Utilized ECS and Fargate for scalable, managed containerized applications.
+
+4. CI/CD Pipeline: Integrated Jenkins for CI/CD, automating the release process from code commit to deployment. Managed source code in Git repositories with automated builds and deployments.
+
+5. Security Measures: Implemented AWS WAF to protect against web exploits, AWS GuardDuty for threat detection, and ensured TLS v1.2 for secure communications.
+
+6. Compliance and Monitoring: Designed to meet PCI DSS standards, used Elasticsearch and APM for centralized logging and performance monitoring, and deployed NAT and Internet Gateways for secure traffic management.
+
+7. Scalable Deployment: Leveraged ECS Container Registry for Docker image management and configured auto-scaling policies.
+
+8. Disaster Recovery and Notification: Set up Route 53 for DNS health checks and failover, and implemented notification systems for potential threats and issues.
+
+This architecture combines AWS services to deliver a scalable, redundant, and secure infrastructure, meeting PCI DSS standards for handling sensitive payment data. It ensures high availability, automated deployments, robust security, and compliance, making it ideal for businesses needing a reliable and secure platform.
