@@ -1,7 +1,4 @@
 
-![PCI_Compliance_Fig4_Architecture_Automate_BuildDeploy_new](https://github.com/user-attachments/assets/1eba37e4-0a95-4860-8c9e-46ff5646024d)
-
-
 
 Designed and implemented a robust AWS infrastructure aimed at ensuring high availability, scalability, and PCI DSS compliance. The architecture integrates multiple VPCs for redundancy, a comprehensive CI/CD pipeline, and enhanced security measures, making it suitable for handling sensitive payment data.
 
